@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "4889b6d4b506d781c87247762843937c"
+name = "bww-content-block"
+handle = "bww-content-block"
+application_url = "https://friend-add-suse-effective.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "miniscript-test.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://friend-add-suse-effective.trycloudflare.com/auth/callback",
+  "https://friend-add-suse-effective.trycloudflare.com/auth/shopify/callback",
+  "https://friend-add-suse-effective.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
